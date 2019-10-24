@@ -34,8 +34,8 @@ public class ELearningChangePasswordELTC_003 {
 	private LoginPOM loginPOM;
 	private MyCourcesPOM myCourcesPOM;
 	private ScreenShot screenShot;
-
-	String expectedMessage;
+	private String expectedMessage;
+	private String actualMessage;	
 	
 
 	@BeforeClass
@@ -68,7 +68,12 @@ public class ELearningChangePasswordELTC_003 {
 		profilePOM.enterPassword("reva123");
 		profilePOM.enterNewPassword("reva321");
 		profilePOM.clickSaveChangesBtn();
-		screenShot.captureScreenShot("LoginSuccessful");
+		screenShot.captureScreenShot("ChangePasswordSuccessful");
+		
+		expectedMessage = "Your new profile has been saved";
+		actualMessage = profilePOM.getMessage();
+		
+		Assert.assertEquals(expectedMessage, actualMessage);
 		
 		
 	}

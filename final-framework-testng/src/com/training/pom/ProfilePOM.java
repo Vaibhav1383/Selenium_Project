@@ -25,6 +25,9 @@ private WebDriver driver;
 	@FindBy(id="profile_apply_change")
 	private WebElement saveChangesBtn;
 	
+	@FindBy(xpath="//div[@class='alert alert-info']")
+	private WebElement changePasswordMessage;
+	
 	public void enterPassword(String password) {
 		this.password.clear();
 		this.password.sendKeys(password);
@@ -39,6 +42,10 @@ private WebDriver driver;
 	
 	public void clickSaveChangesBtn() {
 		this.saveChangesBtn.click();
+	}
+	
+	public String getMessage() {
+		return changePasswordMessage.getText();
 	}
 
 }

@@ -63,7 +63,7 @@ public class ELearningRegistrationELTC_001 {
 		registrationPOM.enterFirstName(fName);
 		registrationPOM.enterLastName(lName);
 		registrationPOM.enterEmail("revasharma@gmail.com");
-		registrationPOM.enterUserName("reva1235678");
+		registrationPOM.enterUserName("reva24680");
 		registrationPOM.enterPassword("reva123");
 		registrationPOM.enterPhone("9876455463");
 		registrationPOM.checkAndSelectRadioButton(registrationPOM.getStudent());

@@ -6,6 +6,7 @@
       <classes>
          <class name = "com.training.sanity.tests.ELearningRegistrationELTC_001" />
          <class name = "com.training.sanity.tests.ELearningLoginELTC_002" />
+         <class name = "com.training.sanity.tests.ELearningChangePasswordELTC_003" />
       </classes>
    </test>
 </suite>	
